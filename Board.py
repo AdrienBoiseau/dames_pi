@@ -39,7 +39,7 @@ class Board:
 
 
     def to_lines(self):
-        print('Jeu de Dames : \n')
+        print('Voici votre plateau de jeu : \n')
         print('   ', end='')
         for i in range(self.size):
             print('', i, '', end='')
@@ -57,3 +57,24 @@ class Board:
 
 
 
+    def move_piece(self):
+        x=int(input('Choisir votre pion - Saisir la coordonnée de la ligne : '))
+        y=int(input('Choisir votre pion - Saisir la coordonnée de la colonne : '))
+
+
+
+        return
+
+
+    def possible_move(self,player):
+        list = []
+        print('\nListe des cases accessibles :')
+        for x in range(self.size):
+            for y in range(self.size):
+                if not self.play_board[x][y]== '.' and not self.play_board[x][y]== '_':
+                    if player==True and self.play_board[x][y].get_color()=='B':
+                        list += self.play_board[x][y].atomic_moves(self.play_board)
+                    if player==False and self.play_board[x][y].get_color()=='N':
+                        list += self.play_board[x][y].atomic_moves(self.play_board)
+
+        return list
