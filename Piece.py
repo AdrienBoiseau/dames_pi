@@ -9,6 +9,10 @@ class Piece:
     def get_position(self):
         return self.position
 
+
+
+
+
     def atomic_moves(self,board):
         list= []
 

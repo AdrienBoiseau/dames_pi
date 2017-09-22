@@ -57,12 +57,3 @@ class Board:
 
 
 
-    def move_piece(self):
-        x=int(input('Choisir votre pion - Saisir la coordonnée de la ligne : '))
-        y=int(input('Choisir votre pion - Saisir la coordonnée de la colonne : '))
-
-
-
-        return
-
-
