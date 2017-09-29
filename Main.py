@@ -34,7 +34,6 @@ while end!=True :
         end = True
 
     list=p.possible_move(player)
-    list=update_list(list)
     write_list(list)
 
 
