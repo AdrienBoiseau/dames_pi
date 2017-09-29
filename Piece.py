@@ -12,7 +12,6 @@ class Piece:
 
 
 
-
     def atomic_moves(self,board):
         list= []
 
